@@ -1,0 +1,61 @@
+body {
+    min-height: 100vh;
+}
+
+header section {
+    background: #000;
+    padding: 0;
+    padding: 30px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+main article {
+    position: relative;
+    width: 900px;
+    height: 525px;
+    margin-bottom: 50px;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+main section {
+    max-width: 140vh;
+    text-align: justify;
+    padding: 0 50px;
+    font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 1600px)
+{
+	main article {
+        width: 80%;
+        height: auto;
+        padding: 0 30px;
+        padding-top: 56.25%;
+    }
+
+    main section {
+        padding-bottom: 50px;
+    }
+}

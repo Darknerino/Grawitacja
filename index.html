@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<title>Grawitacja</title>
+	<link rel="stylesheet" href="style.css" />  
+	<link rel="stylesheet" href="css/fontello.css" />  
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Wiktor Szulc, Mateusz Wołoszyk">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="icon" href="img/icon.jpg">
+</head>
+
+<body>
+	<header id="header">
+		<section>
+			<a href="index.html">Grawitacja</a>
+		</section>
+		
+		<nav>
+			<ul>
+				<a href="#oMnie"><li onclick="dzwiek()">Wstęp</li></a>
+				<a href="#filmy"><li onclick="dzwiek()">Multimedia</li></a>
+				<a href="#kontakt"><li onclick="dzwiek()">Kontakt</li></a>
+				<a href="#socialMedia"><li onclick="dzwiek()">Social Media</li></a>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<article id="oMnie">
+			<section class="animated">		
+				Grawitacja, kolizje i inne atrakcje
+			</section>
+
+			<section class="animated">
+				Strona stworzona na potrzeby projektu dwóch uczniów klasy trzeciej, opierająca się na zobrazowaniu grawitacji między obiektami.
+				Większość materiałów multimedialnych została stworzona własnoręcznie dzięki programom symulującym różne wydarzenia w kosmosie.
+				Pomimo ważnych rozdziałów relatywistycznych, postanowiliśmy umieścić wiele ciekawych odskoczni, chociażby zaćmienie księżyca czy orbitę tesli.
+			</section>
+			<section class="animated">
+				<nav>
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 5</div>
+						<img src="img/sl1.jpg" style="width:100%" alt="slide 1">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 5</div>
+						<img src="img/sl2.jpg" style="width:100%" alt="slide 2">
+					</div>
+	
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 5</div>
+						<img src="img/sl3.jpg" style="width:100%" alt="slide 3">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 5</div>
+						<img src="img/sl4.jpg" style="width:100%" alt="slide 4">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">5 / 5</div>
+						<img src="img/sl5.png" style="width:100%" alt="slide 5">
+					</div>
+	
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</nav>
+				<br>
+
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+			</section>
+		</article>
+		
+		<section id="filmy">
+			<article>
+				Multimedia
+			</article>
+
+			<nav id="sekcjaWideo">
+				<div class="wideo animated">
+					<a href="wideo1.html"><img src="img/min1.png"></a>
+					<figcaption>Ziemia oddalona o 100 000 km od czarnej dziury o masie naszego układu słonecznego</figcaption>
+				</div>
+				<div class="wideo animated">
+					<a href="wideo2.html"><img src="img/min2.png"></a>
+					<figcaption>Tesla w Kosmosie</figcaption>
+				</div>
+				<div class="wideo animated">
+					<a href="wideo3.html"><img src="img/min3.png"></a>
+					<figcaption>Zaćmienie, które potwierdziło teorię Einsteina</figcaption>
+				</div>
+				<div class="wideo animated">
+					<a href="wideo4.html"><img src="img/min4.png"></a>
+					<figcaption>Zderzenie księżyca z ziemią</figcaption>
+				</div>
+			</nav>
+		</section>
+		
+		<section id="kontakt">
+			<aside>
+				<div class="lokalel"><h2>Lokalizacja</h2><h3>Wejherowo</h3></div>
+				<div class="lokalel"><h2>Numer telefonu</h2><h3>192-837-465</h3></div>
+				<div class="lokalel"><h2>Kod pocztowy</h2><h3>84-241</h3></div>
+			</aside>
+		</section>
+
+		<nav id="socialMedia">
+			<a href="https://www.facebook.com" target="_blank"><div class="social animated">
+				<i class="icon-facebook"></i>
+			</div></a>
+			<a href="https://www.instagram.com" target="_blank"><div class="social animated">
+				<i class="icon-instagram"></i>
+			</div></a>
+			<a href="https://soundcloud.com" target="_blank"><div class="social animated">
+				<i class="icon-soundcloud"></i>
+			</div></a>
+			<a href="https://store.steampowered.com" target="_blank"><div class="social animated">
+			<i class="icon-steam"></i>
+			</div></a>
+			<a href="https://www.youtube.com" target="_blank"><div class="social animated"><i class="icon-youtube"></i>
+			</div></a>
+		</nav>
+	</main>
+
+	<footer>
+		Wiktor Szulc, Mateusz Wołoszyk 2022 &copy;
+	</footer>
+
+	<script src="script.js"></script>
+
+	<div id="suwak"><a href="#header"><img src="img/arrow.png"></a></div>
+		
+</body>
+</html>
